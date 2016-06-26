@@ -171,7 +171,7 @@ function populateGpa(sourceId, resultId) {
                    </table>"
     
     details.coursesByTerm.forEach(function(term) {
-      if (term.gpa != 0) {
+      if (term.sumCredits != 0) {
         display += "<hr>\
                     <h3>" + term.programYearId + " - " + term.name + "</h3>\
                     <table class='term-table'>\
