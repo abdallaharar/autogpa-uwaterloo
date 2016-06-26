@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>GPA Auto Calculator</h1>
+    <hr>
+    <h2>Instructions</h2>
+    <p>View your transcript on <a href="https://uwaterloo.ca/quest/">Quest</a> by going to <code>My Academics -> unofficial transcript</code> then select <code>Unofficial Undergraduate</code> as the report type and hit the <code>go</code> button.<br>Once your transcript has loaded and you are on the <code>Report Results</code> page, press <code>CTRL+A</code> then <code>CTRL+C</code> and then paste it into the box below.</p>
+    <hr>
+    <small id="disclaimer">The parser runs completely on your browser, absolutely no data is stored remotely.</small>
+    <textarea id="transcript-data" rows="10" placeholder="Paste your transcript here..."></textarea>
+    <br>
+    <button id="calculate-button" onclick="populateGpa('transcript-data','result')" type="button">Calculate</button>
+    <hr>
+    <div align="center" id="result"></div>
+    <script src="./parser.js"></script>
+  </body>
+</html>

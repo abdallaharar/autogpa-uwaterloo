@@ -1,0 +1,24 @@
+body {
+	margin-left: 15%;
+	margin-right: 15%; 
+}
+code {
+	color: grey;
+}
+#transcript-data {
+	width: 100%;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+table.term-table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+table.term-table, .term-table th, .term-table td {
+    border: 1px solid black;
+    padding:  5px 10px 5px 10px;
+}
+#disclaimer {
+	color: grey; 
+}
