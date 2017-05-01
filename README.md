@@ -1,6 +1,8 @@
 # GPA Auto Calculator
 
-Parses the University of Waterloo unofficial undergraduate transcript to return the cumulative, term and course GPAs based on the OSMAS scale found [here](http://studentsuccess.mcmaster.ca/students/tools/gpa-conversion-chart.html).
+Parses the University of Waterloo unofficial undergraduate transcript to 
+return the cumulative, term and course GPAs based on the OSMAS scale 
+found [here](https://www.ouac.on.ca/guide/omsas-conversion-table/).
 
 [Try it here.](https://ece.uwaterloo.ca/~anarar/autogpa/)
 

@@ -123,7 +123,7 @@ function parseTranscript(data) {
 
 /**
  * Converts a percentage into GPA using the following scale:
- * http://studentsuccess.mcmaster.ca/students/tools/gpa-conversion-chart.html
+ * https://www.ouac.on.ca/guide/omsas-conversion-table/
  */
 function toGpa(percent) {
   if (percent >= 90) return 4.0;
@@ -158,7 +158,7 @@ function populateGpa(sourceId, resultId) {
   var data = document.getElementById(sourceId).value;
   try{
     var details = parseTranscript(data);
-    var display = "<h2>Your cumulative GPA is: " + details.cGpa.toFixed(2) + "</h2>\
+    var display = "<h2>Your cumulative GPA is: " + details.cGpa.toFixed(3) + "</h2>\
                    <table>\
                      <tr>\
                        <td>Student ID: </td>\
@@ -192,7 +192,7 @@ function populateGpa(sourceId, resultId) {
                       </tr>";
         });
         display += "</table>\
-                    <span class='term-gpa'>Term GPA: " + term.gpa.toFixed(2) + "</span>";
+                    <span class='term-gpa'>Term GPA: " + term.gpa.toFixed(3) + "</span>";
       }
     });
   } catch(err) {
