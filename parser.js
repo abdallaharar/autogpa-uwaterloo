@@ -51,7 +51,7 @@ function parseTranscript(data) {
   // Parse out the term and courses taken in that term
   termsRaw.forEach(function(termRaw, i) {
     var matches = termRaw.match(
-        /^((?:Spring|Fall|Winter) \d{4})\s+(\d[A-B])/);
+        /^((?:Spring|Fall|Winter) \d{4})\s+(\d[A-B]|NL)/);
     if (!matches) {
       // This could happen for a term that is a transfer from another school
       return;
