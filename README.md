@@ -1,3 +1,5 @@
+**Notice: the calculator no longer works due to the revamp of Quest's unofficial transcript**
+
 # GPA Auto Calculator
 
 Parses the University of Waterloo unofficial undergraduate transcript to 
